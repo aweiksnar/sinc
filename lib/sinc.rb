@@ -3,4 +3,3 @@ class Sinc
     "sinc"
   end
 end
-
