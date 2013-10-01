@@ -25,7 +25,8 @@ after do
     "",
     Sinc.print_headers(response.headers),
     Sinc.print_params(params),
-    Sinc.session?(session), "Response:")
+    Sinc.session?(session),
+    "Response:")
 end
 
 
