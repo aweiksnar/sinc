@@ -11,26 +11,55 @@ describe "sinc gem" do
     Sinatra::Application
   end
 
-  it "should say hi" do
-    expect(Sinc.test_gem).to eq("sinc")
+  describe "#test_gem" do
+    it "should respond" do
+      expect(Sinc).to respond_to(:test_gem)
+    end
+
+    it "should say hi" do
+      expect(Sinc.test_gem).to eq("sinc")
+    end
   end
 
-  it "should display the headers" do
-    expect(Sinc.print_headers({"Content-Type" => "text/plain"})).to eq("Headers: {\"Content-Type\"=>\"text/plain\"}")
+  describe "#print_headers" do
+    it "should respond" do
+      expect(Sinc).to respond_to(:print_headers)
+    end
+
+    it "should display the headers" do
+      expect(Sinc.print_headers({"Content-Type" => "text/plain"})).to eq("Headers: {\"Content-Type\"=>\"text/plain\"}")
+    end
   end
 
-  it "should display the params" do
-    expect(Sinc.print_params({:fake_key => "fake value"})).to eq("Params: {:fake_key=>\"fake value\"}")
+  describe "#print_params" do
+    it "should respond" do
+      expect(Sinc).to respond_to(:print_params)
+    end
+
+    it "should display the params" do
+      expect(Sinc.print_params({:fake_key => "fake value"})).to eq("Params: {:fake_key=>\"fake value\"}")
+    end
   end
 
-  it "should let the user know if there is a session present" do
-    expect(Sinc.session?({:fake_user_id => 1})).to eq("Session?: true")
+  describe "#session" do
+    it "should respond" do
+      expect(Sinc).to respond_to(:session?)
+    end
+
+    it "should let the user know if there is a session present" do
+      expect(Sinc.session?({:fake_user_id => 1})).to eq("Session?: true")
+    end
   end
 
-  describe "printing to the console" do
+
+  describe "#print_data" do
     before do
       Sinc.stub(:print)
       Sinc.stub(:puts)
+    end
+
+    it "should respond" do
+      expect(Sinc).to respond_to(:print_data)
     end
 
     it "should have a method that displays a list of items" do
