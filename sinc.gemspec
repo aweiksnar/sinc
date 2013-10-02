@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "gem under construction"
   s.authors     = ["Alex Weiksnar"]
   s.email       = 'aweiksnar@gmail.com'
-  s.files       = ["lib/sinc.rb"]
+  s.files       = ["lib/sinc.rb", "lib/after_block.rb"]
   s.executables = ["sinc"]
   s.test_files  = ["spec/sinc_spec.rb", "spec/spec_helper.rb"]
   s.license     = 'MIT'

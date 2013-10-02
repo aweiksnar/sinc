@@ -1,3 +1,5 @@
+require "after_block.rb"
+
 class Sinc
   def self.test_gem
     "sinc"
@@ -19,14 +21,4 @@ class Sinc
     args.each {|arg| puts arg}
   end
 end
-
-after do
-  Sinc.print_data(
-    "",
-    Sinc.print_headers(response.headers),
-    Sinc.print_params(params),
-    Sinc.session?(session),
-    "Response:")
-end
-
 
