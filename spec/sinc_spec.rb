@@ -26,7 +26,7 @@ describe "sinc gem" do
       expect(Sinc).to respond_to(:print_headers)
     end
 
-    it "should display the headers" do
+    it "should display headers" do
       expect(Sinc.print_headers({"Content-Type" => "text/plain"})).to eq("Headers: {\"Content-Type\"=>\"text/plain\"}")
     end
   end
@@ -36,7 +36,7 @@ describe "sinc gem" do
       expect(Sinc).to respond_to(:print_params)
     end
 
-    it "should display the params" do
+    it "should display params" do
       expect(Sinc.print_params({:fake_key => "fake value"})).to eq("Params: {:fake_key=>\"fake value\"}")
     end
   end
@@ -46,11 +46,10 @@ describe "sinc gem" do
       expect(Sinc).to respond_to(:session?)
     end
 
-    it "should let the user know if there is a session present" do
+    it "should display session presence" do
       expect(Sinc.session?({:fake_user_id => 1})).to eq("Session?: true")
     end
   end
-
 
   describe "#print_data" do
     before do
@@ -62,7 +61,7 @@ describe "sinc gem" do
       expect(Sinc).to respond_to(:print_data)
     end
 
-    it "should have a method that displays a list of items" do
+    it "should display a list of items" do
       expect(Sinc.print_data("Hello", "World")).to eq(["Hello", "World"])
     end
   end
