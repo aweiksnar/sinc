@@ -1,7 +1,7 @@
 require "sinatra"
 require "rspec"
 require "rack/test"
-require "./lib/sinc.rb"
+Dir["./lib/**/*.rb"].each {|file| require file }
 
 RSpec.configure do |config|
   config.color_enabled = true
