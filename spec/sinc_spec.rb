@@ -5,7 +5,6 @@ require "spec_helper"
 describe "sinc gem" do
   include Rack::Test::Methods
   require 'rspec/mocks/standalone'
-  require "sinc"
 
   def app
     Sinatra::Application

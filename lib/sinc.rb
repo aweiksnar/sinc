@@ -1,2 +1,2 @@
-require "after_block.rb"
-require "sinc.rb"
+require "after_block"
+require "sinc"
