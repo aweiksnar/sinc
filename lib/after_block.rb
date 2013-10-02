@@ -1,5 +1,3 @@
-require "sinc.rb"
-
 after do
   Sinc.print_data(
     "",
