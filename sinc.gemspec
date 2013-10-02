@@ -9,5 +9,6 @@ Gem::Specification.new do |s|
   s.files       = ["lib/sinc.rb", "lib/after_block.rb"]
   s.executables = ["sinc"]
   s.test_files  = ["spec/sinc_spec.rb", "spec/spec_helper.rb"]
+  s.homepage    = "http://rubygems.org/gems/sinc"
   s.license     = 'MIT'
 end
