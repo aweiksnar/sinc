@@ -9,7 +9,7 @@ class Sinc
     "sinc"
   end
 
-  def self.print_headers(headers)
+  def self.headers(headers)
     "Headers: #{headers}"
   end
 

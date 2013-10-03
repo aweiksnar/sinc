@@ -20,13 +20,13 @@ describe "sinc gem" do
     end
   end
 
-  describe "#print_headers" do
+  describe "#headers" do
     it "should respond" do
-      expect(Sinc).to respond_to(:print_headers)
+      expect(Sinc).to respond_to(:headers)
     end
 
     it "should display headers" do
-      expect(Sinc.print_headers({"Content-Type" => "text/plain"})).to eq("Headers: {\"Content-Type\"=>\"text/plain\"}")
+      expect(Sinc.headers({"Content-Type" => "text/plain"})).to eq("Headers: {\"Content-Type\"=>\"text/plain\"}")
     end
   end
 
