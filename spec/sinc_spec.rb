@@ -11,7 +11,7 @@ describe "sinc gem" do
   end
 
   describe "#test_gem" do
-    it "should respond" do
+    it "should be defined" do
       expect(Sinc).to respond_to(:test_gem)
     end
 
@@ -21,7 +21,7 @@ describe "sinc gem" do
   end
 
   describe "#headers" do
-    it "should respond" do
+    it "should be defined" do
       expect(Sinc).to respond_to(:headers)
     end
 
@@ -31,7 +31,7 @@ describe "sinc gem" do
   end
 
   describe "#params" do
-    it "should respond" do
+    it "should be defined" do
       expect(Sinc).to respond_to(:params)
     end
 
@@ -41,7 +41,7 @@ describe "sinc gem" do
   end
 
   describe "#session" do
-    it "should respond" do
+    it "should be defined" do
       expect(Sinc).to respond_to(:session?)
     end
 
