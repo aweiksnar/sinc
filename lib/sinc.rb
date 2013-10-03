@@ -1,2 +1,2 @@
-require "after_block"
-require "sinc"
+require "sinc/sinc"
+require "sinc/after_block"
