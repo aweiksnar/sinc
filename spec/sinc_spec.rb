@@ -50,6 +50,16 @@ describe "sinc gem" do
     end
   end
 
+  describe "#body" do
+    it "should be defined" do
+      expect(Sinc).to respond_to(:body)
+    end
+
+    it "should display the body" do
+      expect(Sinc.body(["body"])).to eq("Body: \n[\"body\"]\n\n")
+    end
+  end
+
   describe "#configure" do
     it "should be defined" do
       expect(Sinc).to respond_to(:configure)
@@ -60,10 +70,11 @@ describe "sinc gem" do
     end
 
     it "should hold attributes" do
-      config = Sinc.configure(:params => true, :session => true, :headers => false)
+      config = Sinc.configure(:params => true, :session => true, :headers => false, :body => false)
       expect(config.params).to eq(true)
       expect(config.session).to eq(true)
       expect(config.headers).to eq(false)
+      expect(config.body).to eq(false)
     end
   end
 
@@ -73,10 +84,11 @@ describe "sinc gem" do
     end
 
     it "should hold settings" do
-      Sinc.configure(:params => true, :session => true, :headers => false)
+      Sinc.configure(:params => true, :session => true, :headers => false, :body => false)
       expect(Sinc.settings.params).to eq(true)
       expect(Sinc.settings.session).to eq(true)
       expect(Sinc.settings.headers).to eq(false)
+      expect(Sinc.settings.body).to eq(false)
     end
   end
 end
