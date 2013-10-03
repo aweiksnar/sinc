@@ -13,7 +13,7 @@ class Sinc
     "Headers: #{headers}"
   end
 
-  def self.print_params(params)
+  def self.params(params)
     "Params: #{params}"
   end
 

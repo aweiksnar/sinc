@@ -30,13 +30,13 @@ describe "sinc gem" do
     end
   end
 
-  describe "#print_params" do
+  describe "#params" do
     it "should respond" do
-      expect(Sinc).to respond_to(:print_params)
+      expect(Sinc).to respond_to(:params)
     end
 
     it "should display params" do
-      expect(Sinc.print_params({:fake_key => "fake value"})).to eq("Params: {:fake_key=>\"fake value\"}")
+      expect(Sinc.params({:fake_key => "fake value"})).to eq("Params: {:fake_key=>\"fake value\"}")
     end
   end
 
