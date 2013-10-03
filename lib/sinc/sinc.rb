@@ -26,11 +26,6 @@ class Sinc
   end
 
   def self.configure(args)
-    settings = OpenStruct.new
-    settings.params  = args[:params]
-    settings.session = args[:session]
-    settings.headers = args[:headers]
-    settings.body    = args[:body]
-    @settings = settings
+    @settings = OpenStruct.new(args)
   end
 end
