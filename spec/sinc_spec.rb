@@ -50,21 +50,6 @@ describe "sinc gem" do
     end
   end
 
-  describe "#print_data" do
-    before do
-      Sinc.stub(:print)
-      Sinc.stub(:puts)
-    end
-
-    it "should respond" do
-      expect(Sinc).to respond_to(:print_data)
-    end
-
-    it "should display a list of items" do
-      expect(Sinc.print_data("Hello", "World")).to eq(["Hello", "World"])
-    end
-  end
-
   describe "#configure" do
     it "should be defined" do
       expect(Sinc).to respond_to(:configure)

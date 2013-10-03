@@ -21,10 +21,6 @@ class Sinc
     "Session?: #{session.any?}"
   end
 
-  def self.print_data(*args)
-    args.each {|arg| puts arg}
-  end
-
   def self.configure(args)
     settings = OpenStruct.new
     settings.params  = args[:params]
