@@ -5,27 +5,29 @@ module Sinc
     attr_accessor :settings
   end
 
-  def self.test_gem
+  module_function
+
+  def test_gem
     "sinc"
   end
 
-  def self.headers(headers)
+  def headers(headers)
     "Headers: #{headers}"
   end
 
-  def self.params(params)
+  def params(params)
     "Params: #{params}"
   end
 
-  def self.session?(session)
+  def session?(session)
     "Session?: #{session.any?}"
   end
 
-  def self.body(body)
+  def body(body)
     "Body: \n#{body}\n\n"
   end
 
-  def self.configure(args)
+  def configure(args)
     @settings = OpenStruct.new(args)
   end
 end
