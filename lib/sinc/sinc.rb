@@ -1,4 +1,4 @@
-class Sinc
+module Sinc
   require "ostruct"
 
   class << self
