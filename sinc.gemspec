@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'sinc'
   s.version     = '0.0.1'
-  s.date        = '2013-09-30'
+  s.date        = '2013-10-05'
   s.summary     = "sinc = sinatra in console"
   s.description = "Sinatra server log for classic apps"
   s.authors     = ["Alex Weiksnar"]
