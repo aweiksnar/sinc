@@ -57,7 +57,7 @@ Body:
 
 Make sure that you have Sinatra, Rack, and RSpec(>= 2.0) installed and run tests with the $ rspec command after cloning the repo.
 
-## Notes
+## Heads-up
 
 + Sinc does not support modular applications yet
 + Only use sinc in development and test modes
