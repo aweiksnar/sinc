@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'sinc'
-  s.version     = '0.0.0'
+  s.version     = '0.0.1'
   s.date        = '2013-09-30'
-  s.summary     = "Sinatra Console"
-  s.description = "gem under construction"
+  s.summary     = "sinc = sinatra in console"
+  s.description = "Sinatra server log for classic apps"
   s.authors     = ["Alex Weiksnar"]
   s.email       = 'aweiksnar@gmail.com'
   s.files       = Dir.glob("lib/**/*.rb")
