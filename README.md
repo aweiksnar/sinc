@@ -1,4 +1,4 @@
-![sinc](http://i.imgur.com/BU5gy6R.jpg)
+[![sinc](http://i.imgur.com/BU5gy6R.jpg)](http://rubygems.org/gems/sinc)
 
 # sinc ~> 0.0.1
 
